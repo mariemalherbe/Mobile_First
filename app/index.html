@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Welcome</title>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="author" content="">
+		<meta name="keywords" content="blank, css, web, framework">
+		<meta name="description" content="">
+		<meta property="og:description" content="" />
+		<meta property="og:image" content="http://" />
+
+		<!-- FAVICON -->
+		<link rel="shortcut icon" type="image/x-icon" href="../theme/images/.png">
+
+
+		<!-- LOCAL CSS -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+		<link rel="stylesheet" href="styles/styles.css" type="text/css" media="screen">
+
+		<!-- CDN -->
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+		<script type="text/javascript" src="scripts/scripts.js"></script>
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js">
+
+		</script>
+
+	</head>
+	<body class="">
+
+		<!-- HEADER -->
+		<header>
+			<h2 class="tag">EP</h2>
+			<p class="tag--menu">menu</p>
+			<nav class="menu nav__left">
+				<p class="cross">✕</p>
+				<ul>
+					<li><a class="scrollTo" href=".section__1">home</a><img src="images/menu3.png" class="block-img" alt="icon"></li>
+					<li><a class="scrollTo" href=".section__2">about</a><img src="images/menu3.png" class="block-img" alt="icon"></li>
+					<li><a class="scrollTo" href=".section__3">portfolio</a><img src="images/menu3.png" class="block-img" alt="icon"></li>
+					<li><a class="scrollTo" href=".section__5">contact</a></li>
+				</ul>
+			</nav>
+			<nav class="menu nav__right">
+
+			</nav>
+		</header>
+		<!-- FIN HEADER -->
+
+		<!-- MAIN -->
+		<main class="main">
+
+			<section class="section__1">
+				<div class="content">
+					<h1>eddy pividor</h1>
+					<a class="scrollTo" href=".section__2">a mystik world</a>
+				</div>
+
+				<span class="pagination-bottom">01</span>
+			</section>
+
+
+			<section class="section__2" id="section__2--active">
+				<div class="bloc--1">
+					<img src="images/toronto.jpg" alt="" class="img__1">
+					<div class="content">
+						<h3>eddy pividor</h3>
+						<span>photographe</span>
+						<p>21 ans</p>
+					</div>
+				</div>
+				<div class="bloc--2">
+					<h2>
+						<span class="level_1">A propos</span>
+						<span class="level_2">2017</span>
+					</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut porttitor nisi. Vestibulum tellus nisl, volutpat posuere convallis non, porta ac purus. Sed finibus arcu justo, at volutpat odio eleifend ut.</p>
+				</div>
+				<div class="bloc--3">
+					<img src="images/camera2.png" alt="" class="img__2">
+					<p>canon 6d</p>
+				</div>
+
+				<span class="pagination-bottom">02</span>
+				<span class="pagination-title">a propos</span>
+			</section>
+
+
+			<section class="section__3">
+				<h2>
+					<span class="level_1">portfolio</span>
+					<span class="level_2">2017</span>
+				</h2>
+
+				<div class="bloc--info" id="landscape">
+					<img src="images/go.jpg" alt="" class="img__3">
+					<div class="paragraph">
+						<h3>Portrait</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut porttitor nisi.
+								<a class='scrollTo' href=".slider__landscape">See more</a>
+						</p>
+					</div>
+				</div>
+
+				<div class="bloc--info bloc--hide" id="architecture">
+					<img src="images/go.jpg" alt="" class="img__3">
+					<div class="paragraph">
+						<h3>Portrait</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut porttitor nisi.</p>
+						<a class="scrollTo" href=".slider__architecture">See more</a>
+					</div>
+				</div>
+
+				<div class="bloc--info bloc--hide" id="portraits">
+					<img src="images/go.jpg" alt="" class="img__3">
+					<div class="paragraph">
+						<h3>Portrait</h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut porttitor nisi.</p>
+						<a class="scrollTo" href=".slider__portraits">See more</a>
+					</div>
+				</div>
+
+
+				<nav class="orientation">
+					<ul>
+						<li class="orientation__block__landscape active"><a href="">Landscape</a></li>
+						<li class="orientation__block__architecture"><a href="">Architecture</a></li>
+						<li class="orientation__block__portraits"><a href="">Portrait</a></li>
+					</ul>
+				</nav>
+
+				<span class="pagination-bottom">03</span>
+				<span class="pagination-title">portfolio</span>
+			</section>
+
+
+			<section class="section__4">
+				<h2 class="hidden">Hidden title</h2>
+				<div class="content">
+				    <!-- Swiper -->
+				    <div class="swiper-container slider__landscape">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s2.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/2.jpg"></div>
+				        </div>
+				    </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-button-prev" role="button"><p>prev</p></div>
+	    				<div class="swiper-button-next" role="button"><p>next</p></div>
+				</div>
+
+				<div class="content">
+				    <!-- Swiper -->
+				    <div class="swiper-container slider__architecture">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s2.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/2.jpg"></div>
+				        </div>
+				    </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-button-prev" role="button"><p>prev</p></div>
+	    				<div class="swiper-button-next" role="button"><p>next</p></div>
+				</div>
+
+				<div class="content">
+				    <!-- Swiper -->
+				    <div class="swiper-container slider__portraits">
+				        <div class="swiper-wrapper">
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/s2.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/1.jpg"></div>
+				            <div class="swiper-slide"><p class="title-name">Camille</p><img  alt="" src="images/slider/2.jpg"></div>
+				        </div>
+				    </div>
+				        <!-- Add Pagination -->
+				        <div class="swiper-button-prev" role="button"><p>prev</p></div>
+	    				<div class="swiper-button-next" role="button"><p>next</p></div>
+				</div>
+
+				<nav class="orientation">
+					<ul>
+						<li><a href="">Landscape</a></li>
+						<li><a href="">Architecture</a></li>
+						<li><a href="">Portrait</a></li>
+					</ul>
+				</nav>
+
+				<span class="pagination-bottom">03</span>
+				<span class="pagination-title">portfolio</span>
+			</section>
+
+
+			<section class="section__5">
+				<div class="content">
+					<div class="contact_me">
+						<h2>
+							<span class="level_1">contact me</span>
+						</h2>
+						<img src="images/map.png" alt="">
+						<div class="text">
+							<p>paris</p>
+							<span>XII arrondissement</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- FOOTER -->
+				<footer>
+					<p>Follow me on :</p>
+
+					<div class="social">
+						<a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-twitter-square" aria-hidden="true"></i></a>
+						<a href=""><i class="fa fa-instagram" aria-hidden="true"></i></a>
+					</div>
+
+					<p class="send-email">Or send me an email :</p>
+
+					<a href="mailto:eddypividor@gmail.com" class="mailto">eddypividor@gmail.com</a>
+				</footer>
+
+				<span class="pagination-bottom">04</span>
+				<span class="pagination-title">contact me</span>
+			</section>
+		</main>
+		<!-- FIN MAIN -->
+
+
+
+
+    <!-- Swiper JS -->
+    <script src="helpers/Swiper-3.4.1/js/swiper.min.js"></script>
+
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        direction: 'vertical',
+        slidesPerView: 1,
+        paginationClickable: false,
+        spaceBetween: 30,
+        mousewheelControl: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });
+    </script>
+		<!-- FIN FOOTER -->
+	</body>
+</html>
