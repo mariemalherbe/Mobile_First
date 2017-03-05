@@ -35,6 +35,24 @@ var controller = new ScrollMagic.Controller()
         .fromTo(slider, 1, { x: '200px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut }, 'slider')
         .fromTo(name, 1, { y: '300px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, 'slider')
 
+        var map = $('.section__5').find('img'),
+            text = $('.section__5').find('.text');
+            p = $('footer').find('p');
+
+        var tlContact = new TimelineMax({pause : false});
+        tlContact.add('contact')
+        .fromTo(text, 1, { x: '200px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut }, 'contact')
+        .fromTo(map, 1, { y: '300px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, 'contact')
+        .fromTo(p, 1, { y: '300px', opacity: 0 }, { y: 0, opacity: 1, ease: Power2.EaseInOut }, 'contact')
+
+        var link = $('.section__5').find('.mailto');
+            social =$('.section__5').find('.social');
+
+        var tlLink = new TimelineMax({pause : false});
+        tlLink.add('link')
+        .fromTo(link, 1, { x: '250px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut }, "+=0.5")
+        .fromTo(social, 0.5, { x: '200px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut })
+
 
 //Build a scene
 
@@ -52,10 +70,23 @@ var scene3 = new ScrollMagic.Scene({
   triggerElement: '.section__4 .content',
 }).addIndicators()
 .setTween(tlSlider);
+
+var scene4 = new ScrollMagic.Scene({
+  triggerElement: '.section__5 h2',
+}).addIndicators()
+.setTween(tlContact);
+
+var scene5 = new ScrollMagic.Scene({
+  triggerElement: '.section__5 h2',
+}).addIndicators()
+.setTween(tlLink);
+
 controller.addScene([
 scene,
 scene2,
-scene3
+scene3,
+scene4,
+scene5
 ]);
 
 });
