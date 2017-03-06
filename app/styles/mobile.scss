@@ -287,6 +287,11 @@ body{
 					transition-duration: 500ms;
 					transform: translateX(-100%);
 				}
+			&.nav--open{
+				@include desktop{
+					transform: translateX(0%);
+				}
+			}	
 			ul {
 				margin: 110px auto;
 				border: 3px solid;

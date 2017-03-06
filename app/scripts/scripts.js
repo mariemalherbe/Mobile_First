@@ -18,13 +18,13 @@ $(document).ready(function(){
 
 	$('.tag--menu').click(function(e){
 		e.preventDefault();
-		$('.nav__left').css('transform','translateX(0%)');
+		$('.nav__left').addClass('nav--open');
 	});
 
 	$('.cross').click(function(e){
 		e.preventDefault();
 		console.log('hello');
-		$('.nav__left').css('transform','translateX(-1O0%)');
+		$('.nav__left').removeClass('nav--open');
 	});
 
 	$('.orientation__block__landscape').click(function(e){
