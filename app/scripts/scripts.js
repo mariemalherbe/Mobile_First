@@ -18,13 +18,19 @@ $(document).ready(function(){
 
 	$('.tag--menu').click(function(e){
 		e.preventDefault();
-		$('.nav__left').addClass('nav--open');
+		$('.nav__left').toggleClass('nav--open');
+		if($(window).width()<1024){
+			$('.nav__left').toggle('display');
+		}
 	});
 
 	$('.cross').click(function(e){
 		e.preventDefault();
 		console.log('hello');
 		$('.nav__left').removeClass('nav--open');
+		if($(window).width()<1024){
+			$('.nav__left').css('display','none');
+		}
 	});
 
 	$('.orientation__block__landscape').click(function(e){
