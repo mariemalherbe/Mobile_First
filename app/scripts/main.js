@@ -51,7 +51,7 @@ var controller = new ScrollMagic.Controller()
         var tlLink = new TimelineMax({pause : false});
         tlLink.add('link')
         .fromTo(link, 1, { x: '250px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut }, "+=0.5")
-        .fromTo(social, 0.5, { x: '200px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut })
+        .fromTo(social, 1, { x: '200px', opacity: 0 }, { x: 0, opacity: 1, ease: Power2.EaseInOut })
 
 
 //Build a scene
