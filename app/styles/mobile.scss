@@ -79,6 +79,12 @@ body{
 					background-color: #bfd1ea;
 				}
 			}
+			a{
+    			&:hover{
+    				transition-duration:0.5s; 
+    				color:#bfd1ea;
+    			}
+			}
 		}
 	}
 
@@ -264,19 +270,22 @@ body{
 		    }
 		}
 	    .nav__left {
-	      display: none;
-    	  position: fixed;
-    	  top: 50px;
-			  width: 100%;
-			  height: 100vh;
-			  text-align: center;
-			  font-family: 'abril_fatfaceregular';
-			  background-color: $white;
-				opacity: 0.98;
+	    	display: none;
+    	  	position: fixed;
+    	  	top: 50px;
+			width: 100%;
+			height: 100vh;
+			text-align: center;
+			font-family: 'abril_fatfaceregular';
+			background-color: $white;
+			opacity: 0.98;
 				@include desktop{
+					display: block;
 					width: 50%;
 					top: initial;
 					opacity: 1;
+					transition-duration: 500ms;
+					transform: translateX(-100%);
 				}
 			ul {
 				margin: 110px auto;
@@ -587,7 +596,8 @@ body{
 			    display: block;
 			    @include desktop{
 			    	margin: 50px auto 0;
-			    	max-width: 410px;
+			    	max-height: 580px;
+    				max-width: 500px;
 			    }
 			}
 			.paragraph {
@@ -595,20 +605,27 @@ body{
 			    width: 100%;
 			    max-width: 265px;
 			    padding: 15px 25px;
-			    left: 15%;
+			    left: 0;
+			    right: 0;
+			    margin-right: auto;
+			    margin-left: auto;
 			    position: absolute;
 			    @include shadows(0px 2px 10px rgba(0, 0, 0, 0.3));
 					@include desktop{
 						padding: 35px 75px;
 						margin: 0;
+						left: 0;
 						top: 70%;
 					}
 
 					a{
 						text-decoration: line-through;
-						animation-duration: 0.5s;
+						transition-duration: 0.5s;
+						
 						&:hover{
+							
 							text-decoration: none;
+							color: #bfd1ea;
 						}
 					}
 			}
