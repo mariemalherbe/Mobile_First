@@ -10,11 +10,6 @@ $(document).ready(function() {
 
 // MENU
 $(document).ready(function(){
-	$('.tag--menu, .cross').click(function(e){
-		e.preventDefault();
-		$('header').toggleClass('bg-white');
-		$('body').toggleClass('no-scroll');
-	});
 
 	$('.tag--menu').click(function(e){
 		e.preventDefault();
@@ -64,7 +59,7 @@ $(document).ready(function(){
 	$('#portraits').find('a').on('click', function(){
 		$('.slider__landscape').addClass('bloc--hide');
 		$('.slider__portraits').removeClass('bloc--hide');
-		('.nav__landscape').addClass('active');
+		$('.nav__portraits').addClass('active');
 		$('.nav__landscape').removeClass('active');
 	});
 
@@ -102,7 +97,4 @@ $(document).ready(function(){
 		$('.nav__portraits').removeClass('active');
 		$(this).addClass('active');
 	});
-
-
-
-})
+});
